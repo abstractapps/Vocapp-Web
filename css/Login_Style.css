@@ -1,0 +1,61 @@
+.LoginBox{
+    border-radius: 25px;
+    background: white;
+    padding: 10px;
+    height: 260px;
+    margin: auto;
+    width: 20%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+input[type=text] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+.Button {
+    padding: 3px 5px;
+    margin: 0px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    width: 25%;
+    height: 40px;
+    background-color: grey;
+    border-radius: 10px;
+    animation-name: ButtonAnim;
+    animation-duration: 6s;
+    animation-iteration-count:infinite;
+
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+body{
+    animation-name: bodyAnim;
+    animation-duration: 6s;
+    animation-iteration-count:infinite;
+}
+@keyframes bodyAnim {
+    from {background-color: red;}
+    to {background-color: blue;}
+    from {background-color: blue;}
+    to {background-color: red;}
+}
+@keyframes ButtonAnim {
+    from {background-color: blue;}
+    to {background-color: red;}
+    from {background-color: red;}
+    to {background-color: blue;}
+}
